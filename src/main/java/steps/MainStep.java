@@ -25,7 +25,7 @@ public class MainStep {
         return new MainPage(BaseStep.getDriver()).getTravelInsuranceElement(name);
     }
 
-    @Step ("Ожидание")
+    @Step ("ожидание элемента {0}")
     public void waitElement (WebElement element) {
         new MainPage(BaseStep.getDriver()).waitElement(element);
     }

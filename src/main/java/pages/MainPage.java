@@ -10,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import steps.BaseStep;
 
 
 public class MainPage {
@@ -26,7 +27,7 @@ public class MainPage {
     }
 
     public void waitElement (WebElement element) {
-        Wait<WebDriver> wait = new WebDriverWait(driver, 30, 1000);
+        Wait<WebDriver> wait = new WebDriverWait(BaseStep.getDriver(), 30, 1000);
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 

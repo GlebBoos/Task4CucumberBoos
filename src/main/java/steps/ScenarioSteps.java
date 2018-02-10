@@ -30,13 +30,6 @@ public class ScenarioSteps {
 
 
     //Блок 2: Работа в меню страхования путешественников
-    //Ожидание загрузки страницы
-    @Then("^Ожидание: \"(.+)\"$")
-    public void stepWaitElement(WebElement nameElement){
-        mainSteps.waitElement(nameElement);
-    }
-
-    //Проверка заголовка
     @Then("^Проверка на ошибки заголовка \"(.+)\"$")
     public void stepCheckTitle (String title) {
         InsuranceSteps.checkSP(title);
