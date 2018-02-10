@@ -101,7 +101,7 @@ public class RequestPage {
             case "email":
                 fillField(Email, value);
                 break;
-            case "phone":
+            case "телефон":
                 fillField(Phone, value);
                 break;
             case "emailValid":
@@ -153,7 +153,7 @@ public class RequestPage {
             case "email":
                 Assert.assertEquals(expected, Email.getAttribute("value"));
                 break;
-            case "phone":
+            case "телефон":
                 Assert.assertEquals(expected, Phone.getAttribute("value"));
                 break;
             case "emailValid":
